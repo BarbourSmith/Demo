@@ -175,13 +175,13 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.8022486772486772,
-            "y": 0.34104046242774566,
+            "x": 0.4327433628318584,
+            "y": 0.22254335260115607,
             "uniqueID": 1727120662627,
             "ioValues": [
                 {
                     "name": "input1",
-                    "ioValue": 1725645517909
+                    "ioValue": 1725645440869
                 },
                 {
                     "name": "height",
@@ -235,6 +235,13 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "input1",
+            "ap2Primary": false,
+            "ap1ID": 1725645440869,
+            "ap2ID": 1727120662627
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "3D shape 2",
             "ap2Primary": false,
             "ap1ID": 1725645450158,
@@ -260,13 +267,6 @@
             "ap2Primary": false,
             "ap1ID": 1725645517909,
             "ap2ID": 1725645533768
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "input1",
-            "ap2Primary": false,
-            "ap1ID": 1725645517909,
-            "ap2ID": 1727120662627
         },
         {
             "ap1Name": "geometry",
