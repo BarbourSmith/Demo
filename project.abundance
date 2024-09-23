@@ -25,8 +25,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.23015873015873015,
-            "y": 0.48843930635838156,
+            "x": 0.23082010582010581,
+            "y": 0.4942196531791907,
             "uniqueID": 1725645437710,
             "ioValues": [
                 {
@@ -34,7 +34,7 @@
                     "ioValue": 11
                 }
             ],
-            "description": "Creates a new circle."
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level."
         },
         {
             "atomType": "Extrude",
