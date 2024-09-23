@@ -175,8 +175,8 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.4327433628318584,
-            "y": 0.22254335260115607,
+            "x": 0.35648148148148145,
+            "y": 0.2138728323699422,
             "uniqueID": 1727120662627,
             "ioValues": [
                 {
@@ -209,6 +209,44 @@
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.10052910052910052,
+            "y": 0.7254335260115606,
+            "uniqueID": 1727131648466,
+            "ioValues": [
+                {
+                    "name": "input1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Defines a Replicad code block.",
+            "codeVersion": 1,
+            "code": "//Inputs:[input1, height];\n\nlet shape = drawRectangle(5,7)\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\n return 21;\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.25396825396825395,
+            "y": 0.7919075144508672,
+            "uniqueID": 1727131670530,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1725645437710
+                },
+                {
+                    "name": "height",
+                    "ioValue": 1727131648466
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
     "allConnectors": [
@@ -218,6 +256,13 @@
             "ap2Primary": true,
             "ap1ID": 1725645437710,
             "ap2ID": 1725645440869
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1725645437710,
+            "ap2ID": 1727131670530
         },
         {
             "ap1Name": "geometry",
@@ -274,6 +319,13 @@
             "ap2Primary": false,
             "ap1ID": 1725645533768,
             "ap2ID": 1725645434211
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "height",
+            "ap2Primary": false,
+            "ap1ID": 1727131648466,
+            "ap2ID": 1727131670530
         }
     ],
     "unitsKey": "MM",
